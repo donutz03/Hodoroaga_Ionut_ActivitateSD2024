@@ -48,10 +48,10 @@ void copiere_matrice(Haina ***matrice, Haina *vector, int numarHaine, int criter
   for (int i = 0; i < numarHaine; i++) {
     int linie;
     switch (criteriu) {
-      case 0: // Tip
+      case 0: 
         linie = cauta_linie_tip(vector[i].tip, *matrice, numarHaine);
         break;
-      case 1: // Material
+      case 1: 
         linie = cauta_linie_material(vector[i].material, *matrice, numarHaine);
         break;
     }
@@ -89,9 +89,7 @@ int cauta_linie_material(const char *material, Haina **matrice, int numarHaine) 
 }
 
 void sortareMatriceDupaNumarElemente(Haina ***matrice, int numarLinii) {
-  // Algoritmul de sortare utilizează principiul count-sort.
 
-  // Numărarea elementelor de pe fiecare linie.
   int numarElementePeLinie[numarLinii];
   for (int i = 0; i < numarLinii; i++) {
     numarElementePeLinie[i] = 0;
@@ -102,7 +100,6 @@ void sortareMatriceDupaNumarElemente(Haina ***matrice, int numarLinii) {
     }
   }
 
-  // Efectuarea sortării prin numărare.
   int count[numarLinii + 1];
   for (int i = 0; i <= numarLinii; i++) {
     count[i] = 0;
@@ -114,13 +111,11 @@ void sortareMatriceDupaNumarElemente(Haina ***matrice, int numarLinii) {
   int indiceSortat = 0;
   for (int i = 0; i <= numarLinii; i++) {
     while (count[i] > 0) {
-      // Stocarea temporară a liniei curente.
       Haina *linieTemporara[numarLinii];
       for (int j = 0; j < numarLinii; j++) {
         linieTemporara[j] = (*matrice)[indiceSortat + j];
       }
 
-      // Mutarea elementelor in matricea sortata.
       for (int j = 0; j < numarLinii; j++) {
         (*matrice)[indiceSortat + j] = linieTemporara[count[i] - 1];
         numarElementePeLinie[i]--;
@@ -144,22 +139,24 @@ void afisareMatrice(Haina **matrice, int numarLinii, int numarColoane) {
 }
 
 int main() {
-  Haina *haine;
-  int numarHaine;
+Haina **matrice = NULL; 
+    int numarHaine = 0; 
+    const char *numeFisier = "Haine.txt"; 
 
-  citireHainaFisier(&haine, &numarHaine, "haine.txt");
+    citireHainaFisier(&matrice, &numarHaine, numeFisier);
 
-  // Afisarea elementelor din vector
-  for (int i = 0; i < numarHaine; i++) {
-    afisareHaina(haine[i]);
-    printf("\n");
-  }
+    printf("Matricea de haine:\n");
+    afisareMatrice(matrice, numarHaine, 4); 
+    sortareMatriceDupaNumarElemente(&matrice, numarHaine);
 
-  // Eliberarea memoriei alocate
-  for (int i = 0; i < numarHaine; i++) {
-    distrugeHaina(&haine[i]);
-  }
-  free(haine);
+    printf("\nMatricea de haine sortata dupa numarul de elemente:\n");
+    afisareMatrice(matrice, numarHaine, 4); 
 
-  return 0;
+    for (int i = 0; i < numarHaine; i++) {
+        free(matrice[i]->material);
+        free(matrice[i]);
+    }
+    free(matrice);
+
+    return 0;
 }
