@@ -39,6 +39,110 @@ void citireHainaFisier(Haina **haine, int *numarHaine, const char *numeFisier) {
   fclose(fisier);
 }
 
+void copiere_matrice(Haina ***matrice, Haina *vector, int numarHaine, int criteriu) {
+  *matrice = (Haina **)malloc(numarHaine * sizeof(Haina *));
+  for (int i = 0; i < numarHaine; i++) {
+    (*matrice)[i] = (Haina *)malloc(sizeof(Haina));
+  }
+
+  for (int i = 0; i < numarHaine; i++) {
+    int linie;
+    switch (criteriu) {
+      case 0: // Tip
+        linie = cauta_linie_tip(vector[i].tip, *matrice, numarHaine);
+        break;
+      case 1: // Material
+        linie = cauta_linie_material(vector[i].material, *matrice, numarHaine);
+        break;
+    }
+
+    (*matrice)[linie] = alocare_si_copiere_haina(&vector[i]);
+  }
+}
+
+Haina *alocare_si_copiere_haina(const Haina *haina) {
+  Haina *hainaNoua = (Haina *)malloc(sizeof(Haina));
+  strcpy(hainaNoua->tip, haina->tip);
+  hainaNoua->material = (char *)malloc(strlen(haina->material) + 1);
+  strcpy(hainaNoua->material, haina->material);
+  hainaNoua->pret = haina->pret;
+  hainaNoua->marime = haina->marime;
+  return hainaNoua;
+}
+
+int cauta_linie_tip(const char *tip, Haina **matrice, int numarHaine) {
+  for (int i = 0; i < numarHaine; i++) {
+    if (strcmp(matrice[i]->tip, tip) == 0) {
+      return i;
+    }
+  }
+  return numarHaine;
+}
+
+int cauta_linie_material(const char *material, Haina **matrice, int numarHaine) {
+  for (int i = 0; i < numarHaine; i++) {
+    if (strcmp(matrice[i]->material, material) == 0) {
+      return i;
+    }
+  }
+  return numarHaine;
+}
+
+void sortareMatriceDupaNumarElemente(Haina ***matrice, int numarLinii) {
+  // Algoritmul de sortare utilizează principiul count-sort.
+
+  // Numărarea elementelor de pe fiecare linie.
+  int numarElementePeLinie[numarLinii];
+  for (int i = 0; i < numarLinii; i++) {
+    numarElementePeLinie[i] = 0;
+    for (int j = 0; j < numarLinii; j++) {
+      if ((*matrice)[i][j].tip[0] != '\0') {
+        numarElementePeLinie[i]++;
+      }
+    }
+  }
+
+  // Efectuarea sortării prin numărare.
+  int count[numarLinii + 1];
+  for (int i = 0; i <= numarLinii; i++) {
+    count[i] = 0;
+  }
+  for (int i = 0; i < numarLinii; i++) {
+    count[numarElementePeLinie[i]]++;
+  }
+
+  int indiceSortat = 0;
+  for (int i = 0; i <= numarLinii; i++) {
+    while (count[i] > 0) {
+      // Stocarea temporară a liniei curente.
+      Haina *linieTemporara[numarLinii];
+      for (int j = 0; j < numarLinii; j++) {
+        linieTemporara[j] = (*matrice)[indiceSortat + j];
+      }
+
+      // Mutarea elementelor in matricea sortata.
+      for (int j = 0; j < numarLinii; j++) {
+        (*matrice)[indiceSortat + j] = linieTemporara[count[i] - 1];
+        numarElementePeLinie[i]--;
+      }
+
+      indiceSortat += count[i] + 1;
+      count[i]--;
+    }
+  }
+}
+
+void afisareMatrice(Haina **matrice, int numarLinii, int numarColoane) {
+  for (int i = 0; i < numarLinii; i++) {
+    for (int j = 0; j < numarColoane; j++) {
+      if (matrice[i][j].tip[0] != '\0') {
+        printf("%s (%s, %.2f, %d) ", matrice[i][j].tip, matrice[i][j].material, matrice[i][j].pret, matrice[i][j].marime);
+      }
+    }
+    printf("\n");
+  }
+}
+
 int main() {
   Haina *haine;
   int numarHaine;
