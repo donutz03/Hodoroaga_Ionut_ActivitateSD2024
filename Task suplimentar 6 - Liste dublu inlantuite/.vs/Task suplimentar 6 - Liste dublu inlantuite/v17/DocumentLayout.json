@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Task suplimentar 6 - Liste dublu inlantuite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E3E2E435-BBF0-495E-9F97-2C695BF15CDE}|Task suplimentar 6 - Liste dublu inlantuite.vcxproj|C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Task suplimentar 6 - Liste dublu inlantuite\\Task suplimentar 6 - Liste dublu inlantuite.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E3E2E435-BBF0-495E-9F97-2C695BF15CDE}|Task suplimentar 6 - Liste dublu inlantuite.vcxproj|solutionrelative:Task suplimentar 6 - Liste dublu inlantuite.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3E2E435-BBF0-495E-9F97-2C695BF15CDE}|Task suplimentar 6 - Liste dublu inlantuite.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.22621.0\\UCRT\\STDIO.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "stdio.h",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "ViewState": "AQIAAHgCAAAAAAAAAAAnwIUCAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-28T16:04:13.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Task suplimentar 6 - Liste dublu inlantuite.c",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Task suplimentar 6 - Liste dublu inlantuite\\Task suplimentar 6 - Liste dublu inlantuite.c",
+              "RelativeDocumentMoniker": "Task suplimentar 6 - Liste dublu inlantuite.c",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Task suplimentar 6 - Liste dublu inlantuite\\Task suplimentar 6 - Liste dublu inlantuite.c",
+              "RelativeToolTip": "Task suplimentar 6 - Liste dublu inlantuite.c",
+              "ViewState": "AQIAANIAAAAAAAAAAAAAANoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-04-28T15:39:58.179Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
