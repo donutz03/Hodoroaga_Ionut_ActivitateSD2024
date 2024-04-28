@@ -1,3 +1,22 @@
+﻿/*
+Sa se realizeze o aplicatie in limbajul C, care sa ajute personalul de la 
+Unitatea de Primiri Urgente (UPU) in gestiunea pacientilor.
+
+Fiecare pacient care este adus la UPU are un grad prin care se specifica, 
+cat de urgent si grav este. Pacientii care sunt adusi cu ambulanta au gradul de urgenta mult mai mare. 
+deoarece sunt intr-o situatie foarte grava. Sa se realizeze structura Pacient, si pe langa informatiile 
+specifice unui pacient sa adaugati si acest grad de urgenta.
+
+Sa se implementeze modulul care să permită preluarea pacientilor cu grad de urgenta 
+foarte mare chiar daca acestia au venit printre ultimele persoane. 
+In acest mod personalul de la UPU poate sa se ocupe de situatiile foarte grave, 
+iar pacientii care nu sunt in stare grava pot astepta pana cand sunt preluate situatiile urgente.
+
+
+
+Se foloseste un Max-Heap.
+*/
+
 #include<stdlib.h>
 #include<malloc.h>
 #include<stdio.h>

@@ -1,6 +1,6 @@
 ﻿  Task suplimentar 8 - HEAP.c
-C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 8 - HEAP\Task suplimentar 8 - HEAP.c(24,19): warning C4013: 'strlen' undefined; assuming extern returning int
-C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 8 - HEAP\Task suplimentar 8 - HEAP.c(25,3): warning C4013: 'strcpy_s' undefined; assuming extern returning int
-C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 8 - HEAP\Task suplimentar 8 - HEAP.c(115,17): warning C4101: 'pacient1': unreferenced local variable
-C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 8 - HEAP\Task suplimentar 8 - HEAP.c(116,17): warning C4101: 'pacient2': unreferenced local variable
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 8 - HEAP\Task suplimentar 8 - HEAP.c(43,19): warning C4013: 'strlen' undefined; assuming extern returning int
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 8 - HEAP\Task suplimentar 8 - HEAP.c(44,3): warning C4013: 'strcpy_s' undefined; assuming extern returning int
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 8 - HEAP\Task suplimentar 8 - HEAP.c(134,17): warning C4101: 'pacient1': unreferenced local variable
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 8 - HEAP\Task suplimentar 8 - HEAP.c(135,17): warning C4101: 'pacient2': unreferenced local variable
   Task suplimentar 8 - HEAP.vcxproj -> C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 8 - HEAP\x64\Debug\Task suplimentar 8 - HEAP.exe
