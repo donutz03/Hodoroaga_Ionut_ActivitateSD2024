@@ -1,0 +1,5 @@
+﻿  Seminar 8 Heap.c
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 8 Heap\Seminar 8 Heap.c(30,28): warning C4013: 'strlen' undefined; assuming extern returning int
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 8 Heap\Seminar 8 Heap.c(31,2): warning C4013: 'strcpy' undefined; assuming extern returning int
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 8 Heap\Seminar 8 Heap.c(97,27): warning C4129: 'A': unrecognized character escape sequence
+  Seminar 8 Heap.vcxproj -> C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 8 Heap\x64\Debug\Seminar 8 Heap.exe
