@@ -1,0 +1,5 @@
+﻿  Task suplimentar 7 - HashTable.c
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 7 - HashTable\Task suplimentar 7 - HashTable.c(56,18): warning C4013: 'strlen' undefined; assuming extern returning int
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 7 - HashTable\Task suplimentar 7 - HashTable.c(57,2): warning C4013: 'strcpy_s' undefined; assuming extern returning int
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 7 - HashTable\Task suplimentar 7 - HashTable.c(202,2): warning C4013: 'strcpy' undefined; assuming extern returning int
+  Task suplimentar 7 - HashTable.vcxproj -> C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 7 - HashTable\x64\Debug\Task suplimentar 7 - HashTable.exe
