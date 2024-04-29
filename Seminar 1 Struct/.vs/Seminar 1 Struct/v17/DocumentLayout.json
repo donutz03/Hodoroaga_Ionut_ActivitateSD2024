@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Seminar 1 Struct\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7121883-0644-48D7-BDF9-D873FF4B9C01}|Seminar 1 Struct.vcxproj|C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Seminar 1 Struct\\Seminar 1 Struct.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F7121883-0644-48D7-BDF9-D873FF4B9C01}|Seminar 1 Struct.vcxproj|solutionrelative:Seminar 1 Struct.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Seminar 1 Struct.c",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Seminar 1 Struct\\Seminar 1 Struct.c",
+              "RelativeDocumentMoniker": "Seminar 1 Struct.c",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Seminar 1 Struct\\Seminar 1 Struct.c",
+              "RelativeToolTip": "Seminar 1 Struct.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-04-29T13:07:47.901Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

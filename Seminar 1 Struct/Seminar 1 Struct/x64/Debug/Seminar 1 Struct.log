@@ -1,0 +1,5 @@
+﻿  Seminar 1 Struct.c
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 1 Struct\Seminar 1 Struct.c(23,23): warning C4013: 'strlen' undefined; assuming extern returning int
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 1 Struct\Seminar 1 Struct.c(25,3): warning C4013: 'strcpy' undefined; assuming extern returning int
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 1 Struct\Seminar 1 Struct.c(52,61): warning C4305: 'function': truncation from 'double' to 'float'
+  Seminar 1 Struct.vcxproj -> C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 1 Struct\x64\Debug\Seminar 1 Struct.exe
