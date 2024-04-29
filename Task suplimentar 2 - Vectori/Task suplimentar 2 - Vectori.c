@@ -23,6 +23,7 @@ Apelati toate aceste functii in main().
 #include<stdio.h>
 #include<stdlib.h>
 #include <string.h>
+#include <malloc.h>
 struct Haina {
 	int marime;
 	char* marca;
@@ -131,13 +132,13 @@ struct Haina* filtrareHaine(struct Haina haine[], int numarHaine, float pretMaxi
 		
 }
 
-struct Avion* copiazaPrimeleNHaine(struct Haina* haine, int nrHaine, int nrHaineCopiate) {
+struct Haina* copiazaPrimeleNHaine(struct Haina* haine, int nrHaine, int nrHaineCopiate) {
 		if (nrHaineCopiate < nrHaine && nrHaineCopiate>0) {
 			struct Haina* haineCopiate = (struct Haina*)malloc(sizeof(struct Haina) * nrHaineCopiate);
 			for (int i = 0; i < nrHaineCopiate; i++) {
 				haineCopiate[i] = initializareHaina(haine[i].marime, haine[i].marca, haine[i].pret, haine[i].gender);
 			}
-			return haine;
+			return haineCopiate;
 		}
 		else {
 			return NULL;
@@ -145,14 +146,14 @@ struct Avion* copiazaPrimeleNHaine(struct Haina* haine, int nrHaine, int nrHaine
 }
 
 struct Haina* concatHaine(struct Haina* haine1, int dimensiune1, struct Haina* haine2, int dimensiune2) {
-	struct Haina* concatenatedHaine = (struct Haina*)malloc((dimensiune1 + dimensiune2) * sizeof(struct Haina));
+	struct Haina* haineConcatenate = (struct Haina*)malloc((dimensiune1 + dimensiune2) * sizeof(struct Haina));
 	for (int i = 0; i < dimensiune1; i++) {
-		concatenatedHaine[i] = initializareHaina(haine1[i].marime, haine1[i].marca, haine1[i].pret, haine1[i].gender);
+		haineConcatenate[i] = initializareHaina(haine1[i].marime, haine1[i].marca, haine1[i].pret, haine1[i].gender);
 	}
 	for (int i = 0; i < dimensiune2; i++) {
-		concatenatedHaine[dimensiune1 + i] = initializareHaina(haine2[i].marime, haine2[i].marca, haine2[i].pret, haine2[i].gender);
+		haineConcatenate[dimensiune1 + i] = initializareHaina(haine2[i].marime, haine2[i].marca, haine2[i].pret, haine2[i].gender);
 	}
-	return concatenatedHaine;
+	return haineConcatenate;
 }
 
 
@@ -217,6 +218,13 @@ void main() {
 	for (int i = 0; i < nrHaineCopiate; i++) {
 		dezalocareHaina(&haineCopiate[i]);
 	}
+
+	for (int i = 0;i < dimensiuneFiltrate + nrHaineCopiate;i++) 
+	{
+			dezalocareHaina(&haineConcatenate[i]);
+	}
 	free(vectorHaine);
 	free(haineFiltrate);
+	free(haineCopiate);
+	free(haineConcatenate);
 }

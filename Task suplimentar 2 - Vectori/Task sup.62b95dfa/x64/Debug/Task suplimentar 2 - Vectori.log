@@ -1,4 +1,2 @@
 ﻿  Task suplimentar 2 - Vectori.c
-C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 2 - Vectori\Task suplimentar 2 - Vectori.c(140,4): warning C4133: 'return': incompatible types - from 'Haina *' to 'Avion *'
-C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 2 - Vectori\Task suplimentar 2 - Vectori.c(194,16): warning C4133: 'initializing': incompatible types - from 'Avion *' to 'Haina *'
   Task suplimentar 2 - Vectori.vcxproj -> C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 2 - Vectori\x64\Debug\Task suplimentar 2 - Vectori.exe
