@@ -1,37 +1,3 @@
-﻿/*
-Se consideră prima literă din numele vostru, și prima literă din prenumele vostru.
-
-Sa se construiască un articol care să conțină cele două litere.
-
-
-
-Exemplu: Alin Zamfiroiu ->A si Z. Articolul Magazin:
-
-struct Magazin{
-
-int cod;
-
-char* denumire;
-
-int nrProduse;
-
-float *preturi;
-
-}
-
-
-
-Articolul trebuie să aibă logica. Articolul trebuie sa fie un substantiv. Articolul trebuie sa aibă cel puțin trei atribute, si cel puțin unul să fie alocat dinamic.
-
-Realizati o functie cu ajutorul careia sa cititi de la tastatura un articol de tipul construit de voi. Funcția returnează obiectul citit.
-
-Realizati o functie care calculeaza ceva pentru un obiect de tipul implementat de voi. (o medie sau o suma, un maxim, un minim...sau orice altceva)
-
-Realizati o functie care modifica pentru un obiect primit ca parametru, un anumit camp. noua valoare este primita ca parametru.
-
-Realizați o funcție care afișează un obiect de tipul creat. Afișarea se face la console, și sunt afișate toate informațiile.
-*/
-
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
@@ -66,7 +32,7 @@ void afiseazaHaina(struct Haina h) {
 	printf("Pret: %5.2f\n", h.pret);
 	printf("Gen:%c\n\n", h.gender);
 }
-void dezalocareHaina(struct Haina *h) {
+void dezalocareHaina(struct Haina* h) {
 	free(h->marca);
 	(*h).marca = NULL;
 }
@@ -77,14 +43,14 @@ struct Haina citesteHaina() {
 	printf("Introduceti marimea: ");
 	scanf("%d", &h.marime);
 	printf("Introduceti marca: ");
-	char marca[100]; 
+	char marca[100];
 	scanf("%s", marca);
 	h.marca = malloc(strlen(marca) + 1);
 	strcpy(h.marca, marca);
 	printf("Introduceti pretul: ");
 	scanf("%f", &h.pret);
 	printf("Introduceti genul ('M' sau 'F'): ");
-	scanf(" %c", &h.gender); 
+	scanf(" %c", &h.gender);
 	return h;
 }
 
