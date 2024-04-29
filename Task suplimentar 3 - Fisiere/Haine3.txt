@@ -1,0 +1,10 @@
+21,Nike,41.00,F
+22,Puma,42.00,F
+23,Nike,43.00,F
+24,Adidas,44.00,M
+25,Puma,45.00,F
+26,Nike,46.00,F
+27,Nike,47.00,M
+28,Adidas,48.00,M
+29,Adidas,49.00,F
+30,Puma,50.00,M
