@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Seminar 5 Lista Simpla\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD66B126-6B16-4C2A-8329-A6FE2B26144E}|Seminar 5 Lista Simpla.vcxproj|C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Seminar 5 Lista Simpla\\Seminar 5 Lista Simpla.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD66B126-6B16-4C2A-8329-A6FE2B26144E}|Seminar 5 Lista Simpla.vcxproj|solutionrelative:Seminar 5 Lista Simpla.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Seminar 5 Lista Simpla.c",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Seminar 5 Lista Simpla\\Seminar 5 Lista Simpla.c",
+              "RelativeDocumentMoniker": "Seminar 5 Lista Simpla.c",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Seminar 5 Lista Simpla\\Seminar 5 Lista Simpla.c",
+              "RelativeToolTip": "Seminar 5 Lista Simpla.c",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAAAH8AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-04-29T12:41:54.358Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

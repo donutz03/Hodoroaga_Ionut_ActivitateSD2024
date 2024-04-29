@@ -1,0 +1,5 @@
+﻿  Seminar 5 Lista Simpla.c
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 5 Lista Simpla\Seminar 5 Lista Simpla.c(24,29): warning C4013: 'strlen' undefined; assuming extern returning int
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 5 Lista Simpla\Seminar 5 Lista Simpla.c(25,5): warning C4013: 'strcpy' undefined; assuming extern returning int
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 5 Lista Simpla\Seminar 5 Lista Simpla.c(74,1): warning C4715: 'numeCafeneaDensitateMinima': not all control paths return a value
+  Seminar 5 Lista Simpla.vcxproj -> C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 5 Lista Simpla\x64\Debug\Seminar 5 Lista Simpla.exe
