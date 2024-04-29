@@ -1,0 +1,10 @@
+21,Nike,41,F
+22,Puma,42,F
+23,Nike,43,F
+24,Adidas,44,M
+25,Puma,45,F
+26,Nike,46,F
+27,Nike,47,M
+28,Adidas,48,M
+29,Adidas,49,F
+30,Puma,50,M
