@@ -1,0 +1,5 @@
+﻿  Task suplimentar 1 - Struct si functii.c
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 1 - Struct si functii\Task suplimentar 1 - Struct si functii.c(78,61): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 1 - Struct si functii\Task suplimentar 1 - Struct si functii.c(87,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 1 - Struct si functii\Task suplimentar 1 - Struct si functii.c(88,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Task suplimentar 1 - Struct si functii.vcxproj -> C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Task suplimentar 1 - Struct si functii\x64\Debug\Task suplimentar 1 - Struct si functii.exe

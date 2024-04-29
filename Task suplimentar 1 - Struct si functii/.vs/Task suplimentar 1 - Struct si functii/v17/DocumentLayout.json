@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Task suplimentar 1 - Struct si functii\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{443AAB2B-A728-4EB6-A10C-2E082AFA1705}|Task suplimentar 1 - Struct si functii.vcxproj|C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Task suplimentar 1 - Struct si functii\\Task suplimentar 1 - Struct si functii.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{443AAB2B-A728-4EB6-A10C-2E082AFA1705}|Task suplimentar 1 - Struct si functii.vcxproj|solutionrelative:Task suplimentar 1 - Struct si functii.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Task suplimentar 1 - Struct si functii.c",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Task suplimentar 1 - Struct si functii\\Task suplimentar 1 - Struct si functii.c",
+              "RelativeDocumentMoniker": "Task suplimentar 1 - Struct si functii.c",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Task suplimentar 1 - Struct si functii\\Task suplimentar 1 - Struct si functii.c",
+              "RelativeToolTip": "Task suplimentar 1 - Struct si functii.c",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAowFsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-04-29T07:59:35.298Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
