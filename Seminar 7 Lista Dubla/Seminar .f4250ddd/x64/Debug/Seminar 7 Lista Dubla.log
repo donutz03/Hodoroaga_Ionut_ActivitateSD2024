@@ -1,6 +1,0 @@
-﻿  Seminar 7 Lista Dubla.c
-C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 7 Lista Dubla\Seminar 7 Lista Dubla.c(47,50): warning C4013: 'strlen' undefined; assuming extern returning int
-C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 7 Lista Dubla\Seminar 7 Lista Dubla.c(48,5): warning C4013: 'strcpy' undefined; assuming extern returning int
-C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 7 Lista Dubla\Seminar 7 Lista Dubla.c(73,19): warning C4013: 'strcmp' undefined; assuming extern returning int
-C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 7 Lista Dubla\Seminar 7 Lista Dubla.c(136,60): warning C4305: 'function': truncation from 'double' to 'float'
-  Seminar 7 Lista Dubla.vcxproj -> C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 7 Lista Dubla\x64\Debug\Seminar 7 Lista Dubla.exe
