@@ -1,0 +1,6 @@
+﻿  Seminar 2 Vectori.c
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 2 Vectori\Seminar 2 Vectori.c(13,49): warning C4013: 'strlen' undefined; assuming extern returning int
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 2 Vectori\Seminar 2 Vectori.c(14,2): warning C4013: 'strcpy' undefined; assuming extern returning int
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 2 Vectori\Seminar 2 Vectori.c(88,9): warning C4013: 'strcmp' undefined; assuming extern returning int
+C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 2 Vectori\Seminar 2 Vectori.c(102,58): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+  Seminar 2 Vectori.vcxproj -> C:\Users\Lenovo\Desktop\Hodoroaga_Ionut_ActivitateSD2024\Seminar 2 Vectori\x64\Debug\Seminar 2 Vectori.exe
