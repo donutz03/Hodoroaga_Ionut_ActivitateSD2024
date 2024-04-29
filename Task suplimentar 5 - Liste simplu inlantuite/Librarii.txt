@@ -1,0 +1,4 @@
+Arts,12,20
+Humanitas,17,17.3
+Corint,65,33
+Libraria ASE,25,43
