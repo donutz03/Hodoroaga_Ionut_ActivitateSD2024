@@ -5,9 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{62B95DFA-A5B1-457F-800C-6CEFE0019563}|Task suplimentar 2 - Vectori.vcxproj|C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Task suplimentar 2 - Vectori\\Task suplimentar 2 - Vectori.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{62B95DFA-A5B1-457F-800C-6CEFE0019563}|Task suplimentar 2 - Vectori.vcxproj|solutionrelative:Task suplimentar 2 - Vectori.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Task suplimentar 1 - Struct si functii\\Task suplimentar 1 - Struct si functii.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,21 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Task suplimentar 1 - Struct si functii.c",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Task suplimentar 1 - Struct si functii\\Task suplimentar 1 - Struct si functii.c",
-              "RelativeDocumentMoniker": "..\\Task suplimentar 1 - Struct si functii\\Task suplimentar 1 - Struct si functii.c",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Task suplimentar 1 - Struct si functii\\Task suplimentar 1 - Struct si functii.c",
-              "RelativeToolTip": "..\\Task suplimentar 1 - Struct si functii\\Task suplimentar 1 - Struct si functii.c",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB8AAAB8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-04-29T08:50:47.513Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,7 +24,7 @@
               "RelativeDocumentMoniker": "Task suplimentar 2 - Vectori.c",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Hodoroaga_Ionut_ActivitateSD2024\\Task suplimentar 2 - Vectori\\Task suplimentar 2 - Vectori.c",
               "RelativeToolTip": "Task suplimentar 2 - Vectori.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAATAAAA",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAcwGkAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-04-29T08:50:31.108Z",
               "EditorCaption": ""

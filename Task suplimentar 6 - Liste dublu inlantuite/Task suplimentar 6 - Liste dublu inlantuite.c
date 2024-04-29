@@ -120,9 +120,9 @@ ListaDubla stergeLista(ListaDubla listaDubla) {
 }
 
 
-ListaDubla citesteListaDublaFisier(const char* numeFisierStudenti, ListaDubla l) {
-    if (numeFisierStudenti != NULL && strlen(numeFisierStudenti) > 0) {
-        FILE* f = fopen(numeFisierStudenti, "r");
+ListaDubla citesteListaDublaFisier(const char* numeFisier, ListaDubla l) {
+    if (numeFisier != NULL && strlen(numeFisier) > 0) {
+        FILE* f = fopen(numeFisier, "r");
         if (f != NULL) {
             char buffer[100];
             char delimitator[] = ",\n";
@@ -338,7 +338,7 @@ void main()
     printf("Lista simpla obtinuta dupa copierea elementelor din lista dubla \ncu nrLocuri > 20 si suprafata >30:\n");
     afisareListaSimpla(listaSimpla);
 
-    printf("\n\nIntereschanbare: \n\n");
+    printf("\n\nInterschimbare: \n\n");
     interschimbareNoduri(listaDublaSortata, 2, 3); 
     afisareLista(listaDublaSortata);
 }

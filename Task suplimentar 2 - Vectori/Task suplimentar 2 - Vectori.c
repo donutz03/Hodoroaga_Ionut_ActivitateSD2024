@@ -1,3 +1,24 @@
+/*
+Considerati codul de la task-ul precedent.
+
+Creati in functia main un vector alocat dinamic cu cel putin 5 obiecte de tipul structurii voastre.
+
+Realizati o functie care va creea un nou vector în care va copia dintr-un vector primit ca parametru 
+obiectele care indeplinesc o anumita conditie. Stabiliti voi conditia in functie de un atribut sau doua atribute.
+
+Realizati o functie care muta intr-un nou vector obiectele care indeplinesc o alta conditie fata de cerinta precedenta.
+
+Realizati o functie care concateneaza doi vectori.
+
+
+
+Realizati o functie care afiseaza un vector cu obiecte.
+
+
+
+Apelati toate aceste functii in main().
+*/
+
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
@@ -66,38 +87,43 @@ void modificaPret(struct Haina* h, float noulPret) {
 	h->pret = noulPret;
 }
 
+void inserareHainaLaFinal(struct Haina** vectorHaine, int* dimensiuneVector, struct Haina hainaNoua) {
+	struct Haina* nouVector = (struct Haina*)malloc((*dimensiuneVector + 1) * sizeof(struct Haina));
+	for (int i = 0; i < *dimensiuneVector; i++) {
+		nouVector[i] = (*vectorHaine)[i];
+	}
+	nouVector[*dimensiuneVector] = hainaNoua;
+	free(*vectorHaine);
+	*vectorHaine = nouVector;
+	(*dimensiuneVector)++;
+}
+
+
 void main() {
-	struct Haina haina1;
-	haina1.marime = 33;
-	haina1.marca = (char*)malloc(sizeof(char) * (strlen("Nike") + 1));
-	strcpy(haina1.marca, "Nike");
-	haina1.pret = 45;
-	haina1.gender = 'M';
+	int dimensiuneVector = 5;
+	struct Haina* vectorHaine = (struct Haina*)malloc(dimensiuneVector * sizeof(struct Haina));
 
-	afiseazaHaina(haina1);
-	struct Haina haina2 = initializareHaina(27, "Addidas", 23.6, 'F');
+	struct Haina h1 = initializareHaina(20, "Adidas", 39, 'M');
+	struct Haina h2 = initializareHaina(21, "Adidas1", 40, 'F');
+	struct Haina h3 = initializareHaina(22, "Adidas2", 41, 'F');
+	struct Haina h4 = initializareHaina(23, "Adidas3", 42, 'M');
+	struct Haina h5 = initializareHaina(24, "Adidas4", 43, 'F');
 
-	afiseazaHaina(haina2);
-	struct Haina haina3;
-	haina3 = citesteHaina();
-	afiseazaHaina(haina3);
 
-	struct Haina haine[] = {
-		{33, "Nike", 45, 'M'},
-		{27, "Adidas", 23.6, 'F'},
-		{30, "Puma", 35.8, 'M'}
-	};
-	int numarHaine = sizeof(haine) / sizeof(haine[0]);
+	for (int i = 0; i < dimensiuneVector; i++) {
+		printf("Introduceti detaliile pentru haina %d:\n", i + 1);
+		
+	}
 
-	printf("Pretul total al hainelor este: %.2f\n", calcularePretTotal(haine, numarHaine));
+	printf("\nHainele introduse sunt:\n");
+	for (int i = 0; i < dimensiuneVector; i++) {
+		afiseazaHaina(vectorHaine[i]);
+	}
 
-	modificaPret(&haina1, 50.3f);
-	printf("\n\nHaina 1 dupa modificare pret:\n");
-	afiseazaHaina(haina1);
-
-	dezalocareHaina(&haina1);
-	dezalocareHaina(&haina2);
-	dezalocareHaina(&haina3);
+	for (int i = 0; i < dimensiuneVector; i++) {
+		dezalocareHaina(&vectorHaine[i]);
+	}
+	free(vectorHaine);
 
 
 }
