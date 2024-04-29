@@ -98,9 +98,66 @@ void inserareHainaLaFinal(struct Haina** vectorHaine, int* dimensiuneVector, str
 	(*dimensiuneVector)++;
 }
 
+struct Haina* filtrareHaine(struct Haina haine[], int numarHaine, float pretMaxim, char gen, int* dim) {
+	int index = 0;
+	for (int i = 0; i < numarHaine; i++) {
+		if (haine[i].pret <= pretMaxim && haine[i].gender == gen) {
+			index++;
+		}
+	}
+	(*dim) = index;
+	index = 0;
+	if ((*dim) != 0) {
+
+		struct Haina* haineFiltrate = (struct Haina*)malloc((*dim) * sizeof(struct Haina));
+
+		for (int i = 0;i < numarHaine;i++)
+		{
+
+			if (haine[i].pret <= pretMaxim && haine[i].gender == gen) {
+
+				haineFiltrate[index].marime = haine[i].marime;
+				haineFiltrate[index].marca = (char*)malloc((strlen(haine[i].marca) + 1) * sizeof(char));
+				strcpy(haineFiltrate[index].marca, haine[i].marca);
+				haineFiltrate[index].pret = haine[i].pret;
+				haineFiltrate[index].gender = haine[i].gender;
+				index++;
+			}
+		}
+		return haineFiltrate;
+
+	}
+	return NULL;
+		
+}
+
+struct Avion* copiazaPrimeleNHaine(struct Haina* haine, int nrHaine, int nrHaineCopiate) {
+		if (nrHaineCopiate < nrHaine && nrHaineCopiate>0) {
+			struct Haina* haineCopiate = (struct Haina*)malloc(sizeof(struct Haina) * nrHaineCopiate);
+			for (int i = 0; i < nrHaineCopiate; i++) {
+				haineCopiate[i] = initializareHaina(haine[i].marime, haine[i].marca, haine[i].pret, haine[i].gender);
+			}
+			return haine;
+		}
+		else {
+			return NULL;
+		}
+}
+
+struct Haina* concatHaine(struct Haina* haine1, int dimensiune1, struct Haina* haine2, int dimensiune2) {
+	struct Haina* concatenatedHaine = (struct Haina*)malloc((dimensiune1 + dimensiune2) * sizeof(struct Haina));
+	for (int i = 0; i < dimensiune1; i++) {
+		concatenatedHaine[i] = initializareHaina(haine1[i].marime, haine1[i].marca, haine1[i].pret, haine1[i].gender);
+	}
+	for (int i = 0; i < dimensiune2; i++) {
+		concatenatedHaine[dimensiune1 + i] = initializareHaina(haine2[i].marime, haine2[i].marca, haine2[i].pret, haine2[i].gender);
+	}
+	return concatenatedHaine;
+}
+
 
 void main() {
-	int dimensiuneVector = 5;
+	int dimensiuneVector = 0;
 	struct Haina* vectorHaine = (struct Haina*)malloc(dimensiuneVector * sizeof(struct Haina));
 
 	struct Haina h1 = initializareHaina(20, "Adidas", 39, 'M');
@@ -110,20 +167,56 @@ void main() {
 	struct Haina h5 = initializareHaina(24, "Adidas4", 43, 'F');
 
 
-	for (int i = 0; i < dimensiuneVector; i++) {
-		printf("Introduceti detaliile pentru haina %d:\n", i + 1);
-		
-	}
+	inserareHainaLaFinal(&vectorHaine, &dimensiuneVector, h1);
+	inserareHainaLaFinal(&vectorHaine, &dimensiuneVector, h2);
+	inserareHainaLaFinal(&vectorHaine, &dimensiuneVector, h3);
+	inserareHainaLaFinal(&vectorHaine, &dimensiuneVector, h4);
+	inserareHainaLaFinal(&vectorHaine, &dimensiuneVector, h5);
 
 	printf("\nHainele introduse sunt:\n");
 	for (int i = 0; i < dimensiuneVector; i++) {
 		afiseazaHaina(vectorHaine[i]);
 	}
 
+	float pretMaxim = 41.0f;
+	char gen = 'F';
+	int dimensiuneFiltrate = 0;
+
+	struct Haina* haineFiltrate = filtrareHaine(vectorHaine, dimensiuneVector, pretMaxim, gen, &dimensiuneFiltrate);
+	printf("\n\nAfisare vector haine filtrate dupa pret maxim si gen: \n");
+	for (int i = 0; i < dimensiuneFiltrate; i++) {
+		afiseazaHaina(haineFiltrate[i]);
+	}
+
+
+	int nrHaineCopiate = 3;
+
+	struct Haina* haineCopiate = copiazaPrimeleNHaine(vectorHaine, dimensiuneVector, nrHaineCopiate);
+
+	printf("\n\nAfisare vector primele 3 haine: \n");
+
+	for (int i = 0;i < nrHaineCopiate;i++)
+	{
+		afiseazaHaina(haineCopiate[i]);
+	}
+
+	printf("\n\nHaine concatenate din vectorii haineCopiate si haineFiltrate:\n\n");
+	struct Haina* haineConcatenate = concatHaine(haineCopiate, nrHaineCopiate, haineFiltrate, dimensiuneFiltrate);
+	for (int i = 0;i < dimensiuneFiltrate + nrHaineCopiate;i++) {
+		afiseazaHaina(haineConcatenate[i]);
+	}
+
 	for (int i = 0; i < dimensiuneVector; i++) {
 		dezalocareHaina(&vectorHaine[i]);
 	}
+
+	for (int i = 0; i < dimensiuneFiltrate; i++) {
+		dezalocareHaina(&haineFiltrate[i]);
+	}
+
+	for (int i = 0; i < nrHaineCopiate; i++) {
+		dezalocareHaina(&haineCopiate[i]);
+	}
 	free(vectorHaine);
-
-
+	free(haineFiltrate);
 }
